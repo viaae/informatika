@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Saya - Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Family (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen py-10 px-4 sm:px-6 lg:px-8">
+
+  <div class="max-w-4xl mx-auto space-y-8">
+
+    <!-- Card 1: Header / Profile Hero -->
+    <div class="relative bg-slate-800/80 backdrop-blur-md rounded-3xl overflow-hidden border border-slate-700/60 shadow-2xl">
+      <!-- Banner Background Grid/Gradient -->
+      <div class="h-36 sm:h-48 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 relative">
+        <div class="absolute inset-0 bg-[radial-gradient(#rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:16px_16px] opacity-30"></div>
+      </div>
+
+      <!-- Profile Info Section -->
+      <div class="px-6 pb-8 pt-0 sm:px-8 relative">
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between -mt-16 sm:-mt-20 mb-6 gap-4">
+          <!-- Avatar -->
+          <div class="relative w-28 h-28 sm:w-36 sm:h-36">
+            <img 
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" 
+              alt="Foto Profil" 
+              class="w-full h-full rounded-2xl object-cover border-4 border-slate-800 shadow-xl"
+            />
+            <!-- Status Badge -->
+            <span class="absolute bottom-1 right-1 sm:bottom-2 sm:right-2 flex h-4 w-4">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-4 w-4 bg-emerald-500 border-2 border-slate-800" title="Open to Work"></span>
+            </span>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap gap-3">
+            <a href="#contact" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium rounded-xl transition-all shadow-lg shadow-indigo-600/30 flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4"></i> Hubungi Saya
+            </a>
+            <a href="#" class="px-5 py-2.5 bg-slate-700/80 hover:bg-slate-700 text-slate-200 text-sm font-medium rounded-xl border border-slate-600/60 transition-all flex items-center gap-2">
+              <i data-lucide="download" class="w-4 h-4"></i> Unduh CV
+            </a>
+          </div>
+        </div>
+
+        <!-- Name & Bio Title -->
+        <div class="space-y-2">
+          <div class="flex items-center gap-3 flex-wrap">
+            <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Alex Taylor</h1>
+            <span class="px-2.5 py-0.5 text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full">
+              Available for Hire
+            </span>
+          </div>
+          <p class="text-indigo-400 font-medium text-sm sm:text-base">Full-Stack Developer & UI/UX Designer</p>
+          <div class="flex items-center gap-4 text-xs sm:text-sm text-slate-400 pt-1">
+            <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4"></i> Jakarta, Indonesia</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="briefcase" class="w-4 h-4"></i> 5+ Tahun Pengalaman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Layout Grid: About & Skills -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Left Column: About Me -->
+      <div class="md:col-span-2 bg-slate-800/80 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-slate-700/60 shadow-xl space-y-4">
+        <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+          <i data-lucide="user" class="w-5 h-5 text-indigo-400"></i> Tentang Saya
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Halo! Saya seorang pengembang web passionate yang fokus membangun aplikasi modern, cepat, dan mudah digunakan. Terbiasa bekerja dengan ekosistem JavaScript modern, desain antarmuka, serta optimasi performa.
+        </p>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Saat tidak sedang menulis kode, saya biasanya aktif menulis artikel teknis, bereksperimen dengan ide-ide baru, atau berkontribusi pada proyek open source.
+        </p>
+      </div>
+
+      <!-- Right Column: Tech Stack & Socials -->
+      <div class="space-y-8">
+        <!-- Tech Stack -->
+        <div class="bg-slate-800/80 backdrop-blur-md rounded-3xl p-6 border border-slate-700/60 shadow-xl space-y-4">
+          <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+            <i data-lucide="code-2" class="w-5 h-5 text-indigo-400"></i> Keahlian
+          </h2>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 bg-slate-700/60 text-slate-200 text-xs font-medium rounded-lg border border-slate-600/40">React</span>
+            <span class="px-3 py-1.5 bg-slate-700/60 text-slate-200 text-xs font-medium rounded-lg border border-slate-600/40">Next.js</span>
+            <span class="px-3 py-1.5 bg-slate-700/60 text-slate-200 text-xs font-medium rounded-lg border border-slate-600/40">TypeScript</span>
+            <span class="px-3 py-1.5 bg-slate-700/60 text-slate-200 text-xs font-medium rounded-lg border border-slate-600/40">Tailwind CSS</span>
+            <span class="px-3 py-1.5 bg-slate-700/60 text-slate-200 text-xs font-medium rounded-lg border border-slate-600/40">Node.js</span>
+            <span class="px-3 py-1.5 bg-slate-700/60 text-slate-200 text-xs font-medium rounded-lg border border-slate-600/40">PostgreSQL</span>
+            <span class="px-3 py-1.5 bg-slate-700/60 text-slate-200 text-xs font-medium rounded-lg border border-slate-600/40">Figma</span>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="bg-slate-800/80 backdrop-blur-md rounded-3xl p-6 border border-slate-700/60 shadow-xl space-y-3">
+          <h2 class="text-lg font-semibold text-white flex items-center gap-2 mb-2">
+            <i data-lucide="share-2" class="w-5 h-5 text-indigo-400"></i> Media Sosial
+          </h2>
+          <a href="#" class="flex items-center justify-between p-2.5 rounded-xl bg-slate-700/30 hover:bg-slate-700/60 text-slate-300 hover:text-white transition-all text-sm border border-slate-700/50">
+            <span class="flex items-center gap-2.5"><i data-lucide="github" class="w-4 h-4"></i> GitHub</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400"></i>
+          </a>
+          <a href="#" class="flex items-center justify-between p-2.5 rounded-xl bg-slate-700/30 hover:bg-slate-700/60 text-slate-300 hover:text-white transition-all text-sm border border-slate-700/50">
+            <span class="flex items-center gap-2.5"><i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400"></i>
+          </a>
+          <a href="#" class="flex items-center justify-between p-2.5 rounded-xl bg-slate-700/30 hover:bg-slate-700/60 text-slate-300 hover:text-white transition-all text-sm border border-slate-700/50">
+            <span class="flex items-center gap-2.5"><i data-lucide="twitter" class="w-4 h-4"></i> X / Twitter</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Section: Featured Projects -->
+    <div class="bg-slate-800/80 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-slate-700/60 shadow-xl space-y-6">
+      <div class="flex items-center justify-between">
+        <h2 class="text-lg sm:text-xl font-semibold text-white flex items-center gap-2">
+          <i data-lucide="folder-git-2" class="w-5 h-5 text-indigo-400"></i> Proyek Unggulan
+        </h2>
+        <a href="#" class="text-xs sm:text-sm text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-medium">
+          Lihat Semua <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- Project Card 1 -->
+        <div class="group bg-slate-900/60 rounded-2xl p-5 border border-slate-700/50 hover:border-indigo-500/50 transition-all duration-300 space-y-3">
+          <div class="h-40 rounded-xl overflow-hidden relative">
+            <img 
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600" 
+              alt="SaaS Analytics Dashboard" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <h3 class="font-semibold text-white group-hover:text-indigo-400 transition-colors">SaaS Analytics Dashboard</h3>
+          <p class="text-slate-400 text-xs sm:text-sm line-clamp-2">Platform analisis data bisnis secara real-time berbasis AI dengan visualisasi grafik interaktif.</p>
+          <div class="flex items-center gap-2 pt-1 text-xs text-slate-400 font-mono">
+            <span>Next.js</span> • <span>Tailwind</span> • <span>ChartJS</span>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="group bg-slate-900/60 rounded-2xl p-5 border border-slate-700/50 hover:border-indigo-500/50 transition-all duration-300 space-y-3">
+          <div class="h-40 rounded-xl overflow-hidden relative">
+            <img 
+              src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=600" 
+              alt="E-Commerce Mobile App" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <h3 class="font-semibold text-white group-hover:text-indigo-400 transition-colors">E-Commerce Web Application</h3>
+          <p class="text-slate-400 text-xs sm:text-sm line-clamp-2">Aplikasi belanja online cepat dengan payment gateway terintegrasi dan fitur pencarian pintar.</p>
+          <div class="flex items-center gap-2 pt-1 text-xs text-slate-400 font-mono">
+            <span>React</span> • <span>Node.js</span> • <span>Stripe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer / Contact Section -->
+    <div id="contact" class="bg-gradient-to-br from-indigo-900/40 to-slate-800/80 rounded-3xl p-8 border border-indigo-500/20 shadow-xl text-center space-y-4">
+      <h2 class="text-2xl font-bold text-white">Tertarik Bekerja Sama?</h2>
+      <p class="text-slate-300 text-sm max-w-lg mx-auto">
+        Saya selalu terbuka untuk proyek baru, konsultasi teknis, atau sekadar berdiskusi seputar teknologi web.
+      </p>
+      <div class="pt-2">
+        <a href="mailto:alex@example.com" class="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm rounded-xl transition-all shadow-lg shadow-indigo-600/30">
+          <i data-lucide="mail" class="w-4 h-4"></i> Kirim Email
+        </a>
+      </div>
+      <p class="text-xs text-slate-500 pt-4">© 2026 Alex Taylor. Designed with Tailwind CSS.</p>
+    </div>
+
+  </div>
+
+  <!-- Render Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
